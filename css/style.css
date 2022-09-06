@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;700;800;900&family=Poppins:ital,wght@0,400;0,700;1,700&family=Rubik:wght@400;700&display=swap");
+@media (max-width: 576px) {
+  header {
+    background-color: white;
+    z-index: 8;
+    padding: 0rem 2rem;
+  }
+  header .general .second {
+    display: none;
+  }
+  header .general .first {
+    padding: 0;
+  }
+  header .general .third {
+    margin-left: 7.6rem;
+  }
+  #nextGeneration .all .general {
+    flex-direction: column-reverse;
+  }
+  #nextGeneration .all .general .first {
+    margin-top: 2rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+}
+header .general {
+  margin: 1.5rem 0rem;
+}
+header .general .all {
+  align-items: center;
+}
+header .general .all img {
+  width: 100%;
+}
+header .general .all ul {
+  display: flex;
+  justify-content: space-between;
+}
+header .general .all ul li a {
+  color: black;
+  font-weight: 500;
+  transition-duration: 0.5s;
+}
+header .general .all ul li a:hover {
+  color: #367e62;
+}
+header .general .all .third {
+  padding: 0.8rem 0rem;
+  background-color: #1c4a3e;
+  border-radius: 5px;
+  text-align: center;
+}
+header .general .all .third a {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+header .general .all .third:hover {
+  background-color: #367e62;
+  border-radius: 5px;
+  text-align: center;
+  transition-duration: 0.3s;
+  transform: translateY(-3px);
+}
+header .general .all .third:hover a {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+#nextGeneration {
+  padding-top: 10rem;
+}
+#nextGeneration img {
+  width: 100%;
+  border-radius: 15px;
+}
+#nextGeneration p {
+  color: #777;
+  padding-right: 0.01rem;
+  font-family: "Rubik", sans-serif;
+  margin-top: 2rem;
+  font-size: 18px;
+  font-weight: 400;
+}
+#nextGeneration .btn {
+  border: 1px solid transparent;
+  margin-top: 2rem;
+  padding: 0;
+}
+#nextGeneration .btn .one {
+  background-color: #1c4a3e;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #1c4a3e;
+  padding: 0.5rem 2rem;
+}
+#nextGeneration .btn .one a {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+#nextGeneration .btn .one:hover {
+  background-color: #367e62;
+  transition-duration: 0.3s;
+  transform: translateY(-3px);
+}
+#nextGeneration .btn .two {
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #1c4a3e;
+  padding: 0.5rem 2.5rem;
+}
+#nextGeneration .btn .two a {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+#nextGeneration .btn .two a {
+  color: #1c4a3e !important;
+}
+#nextGeneration .btn .two:hover {
+  background-color: #1c4a3e;
+  transition-duration: 0.3s;
+  transform: translateY(-3px);
+}
+#nextGeneration .btn .two:hover a {
+  color: white !important;
+}
+#nextGeneration h1 {
+  font-size: 40px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: rgb(33, 37, 41);
+  line-height: 48px;
+  padding-right: 1.5rem;
+}
+#nextGeneration h1 .change {
+  color: #367e62;
+  position: relative;
+}
+#nextGeneration h1 .change::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  bottom: 0;
+  left: 0;
+  border: 1px solid #77d1ae;
+  background-color: #77d1ae;
+  padding: 3px 9.3rem;
+}
+
+#premium {
+  padding-top: 5rem;
+}/*# sourceMappingURL=style.css.map */

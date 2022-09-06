@@ -1,0 +1,136 @@
+@import '_media.scss';
+@import '_reset.scss';
+@import '_responsive.scss';
+@import '_animation.scss';
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700;800;900&family=Poppins:ital,wght@0,400;0,700;1,700&family=Rubik:wght@400;700&display=swap');
+
+
+$primary_color: #1c4a3e;
+$secondary_color: #367e62;
+$primary_font:'Rubik', sans-serif;
+
+
+@mixin common_btn($size, $bgcolor) {
+    background-color: $bgcolor;
+    border-radius: 5px;
+    text-align: center;
+   a{
+    color: white;
+    font-weight: 500;
+    font-size: $size;
+   }
+}
+header{
+    position: fixed;
+    width: 100%;
+    .general{
+        margin: 1.5rem 0rem;
+        .all{
+          align-items: center;
+          img{
+              width: 100%;
+          }
+         ul{
+          display: flex;
+          justify-content: space-between;
+          li{
+            a{
+                color: black;
+                font-weight: 500;
+                transition-duration: .5s;
+                &:hover{
+                   color: $secondary_color;
+                }
+            }
+          }
+         }
+         .third{
+           padding: .8rem 0rem;
+             @include common_btn(16px , $primary_color);
+             &:hover{
+              @include common_btn(16px, $secondary_color);
+              transition-duration: .3s;
+              transform: translateY(-3px);
+            }
+         }
+        }
+    }
+    
+}
+
+#nextGeneration{
+   padding-top: 10rem;
+   img{
+    width: 100%;
+    border-radius: 15px;
+   }
+   p{
+    color: #777;
+    padding-right: .01rem;
+    font-family: $primary_font;
+    margin-top: 2rem;
+    font-size: 18px;
+    font-weight: 400;
+   }
+   .btn{
+    border: 1px solid transparent;
+    margin-top: 2rem;
+      padding: 0;
+        .one{
+        @include common_btn( 18px, $primary_color);
+        border: 1px solid $primary_color;
+         padding: .5rem 2rem;
+         &:hover{
+            background-color: $secondary_color;
+            transition-duration: .3s;
+            transform: translateY(-3px);
+         }
+        } 
+        .two{
+           
+            @include common_btn( 18px, white);
+            a{
+            color: $primary_color !important;
+            }
+            border: 1px solid $primary_color;
+         padding: .5rem 2.5rem;
+         &:hover{
+            background-color: $primary_color;
+            transition-duration: .3s;
+            transform: translateY(-3px);
+            a{
+                color: white !important;
+            }
+         }
+        }
+    
+   }
+   h1{
+    font-size: 40px;
+    margin-bottom: 8px;
+  font-weight: 500;
+  color: rgb(33, 37, 41);
+  line-height: 48px;
+  padding-right: 1.5rem;
+  .change{
+    color: $secondary_color;
+    position: relative;
+    &::after{
+        position: absolute;
+        z-index: -1;
+        content: '';
+        bottom: 0;
+        left: 0;
+        border: 1px solid #77d1ae;
+        background-color: #77d1ae;
+        padding: 3px 9.3rem;
+    }
+  }
+   }
+}
+#premium{
+    padding-top: 5rem;
+    h3{
+
+    }
+}

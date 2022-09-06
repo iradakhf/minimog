@@ -1,0 +1,29 @@
+@media(max-width:576px){
+    header{
+        background-color: white;
+        z-index: 8;
+        padding: 0rem 2rem;
+        .general{
+            .second{
+                display: none;
+            }
+            .first{
+                padding: 0;
+            }
+            .third{
+                margin-left: 7.6rem;
+            }
+        }
+    }
+    #nextGeneration{
+        .all{
+            .general{
+                flex-direction: column-reverse;
+                .first{
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+   
+}
